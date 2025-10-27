@@ -22,7 +22,8 @@ By comparing multiple LLM families (OpenAI, Google, and open-source), we examine
 ```
 LLM_Media_Vaccine_Agent/
 ├── data/ # Example input data and results
-├── Chatgpt.ipynb # Main pipeline for GPT-4o-mini / GPT-4.1 / Gemini-2.5-Flash
+├── Chatgpt.ipynb # Main pipeline for GPT-4o-mini / GPT-4.1
+├── Gemini-2.5-flash.ipynb # Gemini-2.5-Flash-based experiments
 ├── Llama_4_17b.ipynb # LLaMA-4-17B-based experiments
 ├── Counterfactual_Analysis.ipynb # M2 counterfactual variants (random diet, random articles, etc.)
 ├── TextGrad.ipynb # Prompt optimization via TextGrad (trainable segments between % Task Prompt and Output format)
