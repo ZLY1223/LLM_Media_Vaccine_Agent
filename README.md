@@ -12,7 +12,7 @@ By comparing multiple LLM families (OpenAI, Google, and open-source), we examine
 
 | Model | Description | Key Input Features |
 |--------|--------------|--------------------|
-| **M0 – Demographics Only** | Baseline model that predicts vaccine decisions purely from demographic attributes. | Age, gender, income, education, region |
+| **M0 – Demographics Only** | Baseline model that predicts vaccine decisions purely from demographic attributes. | Age, gender, income, education |
 | **M1 – Survey Model** | Adds prior-belief variables on top of demographics (survey-based). | Demographics + attitudes toward vaccine, trust in science, perceived severity, etc. |
 | **M2 – Media Diet Model** | Incorporates personalized media diet on top of demographics (replacing belief inputs). | Demographics + Media Diet (Left Echochamber / Center-ish / Right Echochamber / Misinformation-Only) |
 
