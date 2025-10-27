@@ -1,4 +1,4 @@
-# Vaccine_LLM_Prompt_Engineering
+# LLM_Vaccine_Agent
 ## Overview
 This project explores the application of **Large Language Models (LLMs)** in predicting vaccine hesitancy.
 We aim to:
