@@ -19,15 +19,15 @@ We use multiple LLMs (GPT-4o-mini, GPT-4.1, Gemini-2.5-Flash, and LLaMA-4-17B) t
 ---
 
 ## 🧩 Repository Structure
-
-LLM_Vaccine_Agent/
+```
+LLM_Media_Vaccine_Agent/
 ├── data/ # Example input data or small samples
 ├── Chatgpt.ipynb # Main pipeline for GPT-4o-mini / GPT-4.1
 ├── Llama_4_17b.ipynb # LLaMA-4-17B-based experiments
 ├── Counterfactual_Analysis.ipynb # M2 counterfactual variants (random diet, random articles, etc.)
 ├── TextGrad.ipynb # Prompt optimization via TextGrad (trainable segments between % Task Prompt and Output format)
 └── README.md
-
+```
 
 ---
 
