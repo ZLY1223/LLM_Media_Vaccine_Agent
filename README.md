@@ -85,9 +85,8 @@ All data used in this repository are organized under the `data/` directory.
 data/
 ├── Input/
 │ ├── sample_1000/ # Example inputs for model inference
-│ ├── Media Diet Data.zip # Curated media diet data (left/center/right/misinformation/public health)
-│ ├── Rawdata_text.xlsx # Raw text and metadata used to construct prompts
-│ └── README.md # Data documentation and preprocessing notes
+│ ├── Media Diet Data.zip # Curated media diet data
+│ └── RRawdata_text.xlsx # Raw text and metadata used to construct prompts
 │
 └── Results/
 ├── sample_1000/ # Example model outputs (GPT / Gemini / LLaMA comparisons)
