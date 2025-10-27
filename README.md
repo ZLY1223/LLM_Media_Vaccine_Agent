@@ -14,7 +14,7 @@ We use multiple LLMs (GPT-4o-mini, GPT-4.1, Gemini-2.5-Flash, and LLaMA-4-17B) t
 |--------|--------------|--------------------|
 | **M0 – Demographics Only** | Baseline model that predicts vaccine decisions purely based on demographic attributes. | Age, gender, income, education, region |
 | **M1 – Survey Model** | Incorporates demographic + prior belief variables (survey-based). | Demographics + attitudes toward vaccine, trust in science, perceived severity, etc. |
-| **M2 – Media Diet Model** | Adds media exposure information on top of demographics and beliefs. | Demographics + beliefs + personalized media feed (Left / Center / Right / Misinformation / Public Health) |
+| **M2 – Media Diet Model** | Adds media exposure information on top of demographics (Replace beliefs). | Demographics + personalized media diet (Left Echochamber / Center-ish / Right Echochamber / Misinformation Only) |
 
 ---
 
