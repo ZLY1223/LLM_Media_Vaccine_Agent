@@ -34,39 +34,47 @@ LLM_Media_Vaccine_Agent/
 ## 🔍 Notebook Descriptions
 
 ### 🤖 **Chatgpt.ipynb**
-Implements all M0–M2 models using **GPT-4o-mini**, **GPT-4.1**, and **Gemini-2.5-Flash**.  
-- **M0:** Demographics-only baseline  
-- **M1:** Demographics + Prior Beliefs  
-- **M2:** Demographics + Media Diet  
-  - Media-diet assignment derived from participants’ demographic and belief profiles  
-  - Predicts vaccine decisions under each media exposure type  
-  - Enables cross-model comparison among GPT and Gemini families  
+Implements all **M0–M2** configurations using **GPT-4o-mini** and **GPT-4.1**.  
+- **M0 – Demographics-Only:** baseline simulation using demographic attributes  
+- **M1 – Survey Model:** adds prior belief variables to demographics  
+- **M2 – Media Diet Model:** integrates demographics, beliefs, and media-exposure context  
+  - Media diet assignment derived from participants’ demographics and beliefs  
+  - Produces baseline results for comparison with Gemini-2.5-Flash and LLaMA-4-17B  
+
+---
+
+### 🌐 **Gemini_2_5_flash.ipynb**
+Runs the same M0–M2 pipeline on **Gemini-2.5-Flash** (Google model).  
+- Mirrors the ChatGPT notebook to ensure architecture-consistent prompts and evaluation  
+- Provides a **cross-vendor comparison** between OpenAI (GPT) and Google (Gemini) systems  
+- Evaluates robustness, reasoning diversity, and consistency across media-exposure conditions  
 
 ---
 
 ### 🦙 **Llama_4_17b.ipynb**
-Runs the same modeling pipeline on **LLaMA-4-17B** (open-weight model) to test generalizability across **closed-source (GPT, Gemini)** and **open-source** LLMs.
+Runs the same experiments on **LLaMA-4-17B** (open-weight model via Hugging Face).  
+Serves as the **open-source baseline** to benchmark against closed-source families (GPT / Gemini).  
 
 ---
 
 ### ⚙️ **TextGrad.ipynb**
-Implements **prompt-engineering optimization** using **TextGrad**:  
-- Improves reasoning quality within the `% Task Prompt` block  
-- Optimizes trainable text segments between `% Task Prompt` and `Output format`  
+Implements **prompt-engineering optimization** using **TextGrad**, applied to all LLM families (GPT, Gemini, LLaMA).  
+- Optimizes reasoning within the `% Task Prompt` section  
+- Adjusts trainable segments between `% Task Prompt` and `Output format`  
 - Evaluated by accuracy, balanced accuracy, and recall across M2 settings  
 
 ---
 
 ### 🔁 **Counterfactual_Analysis.ipynb**
-Implements multiple **M2 counterfactual variants** to assess model robustness:  
-- **Random Diet Assignment** – each participant randomly assigned a media diet  
+Implements multiple **M2 counterfactual variants** across all models (GPT-4o-mini / GPT-4.1 / Gemini-2.5-Flash / LLaMA-4-17B):  
+- **Random Diet Assignment** – random media exposure per participant  
 - **Random 5 Articles Sampling** – five random articles per diet  
 - **Random 10 Articles Sampling** – ten random articles per diet  
 - **Demographics-Only Assignment** – removes belief layer  
 - **Misinformation-Only** – isolates misinformation exposure  
 - **Public-Health-Only** – isolates official health-source exposure  
 
-These counterfactuals evaluate how media randomness or selective exposure alters simulated vaccine decisions across GPT, Gemini, and LLaMA models.
+These experiments assess how media-exposure variability and model family jointly shape simulated vaccine decisions.
 
 ---
 
